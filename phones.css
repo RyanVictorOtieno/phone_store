@@ -1,0 +1,454 @@
+body{
+	font-family: sans-serif;
+	line-height: 1.5;
+	margin: 0px;
+	height: 100%
+	
+}
+*{
+	box-sizing: border-box;
+	margin: 0px;
+}
+/*NAVBAR STYLING*/
+ul{
+	text-decoration: none;
+	list-style: none;
+}
+nav{
+	height: 100px;
+	width: 100%;
+	background-color: #051525;
+}
+.logo{
+	font-size: 35px;
+	font-weight: bold;
+	color:rgb(227, 243, 240);
+	padding: 0 100px;
+	line-height: 100px;
+}
+nav ul{
+	float: right;
+	margin-right: 40px;
+}
+nav li{
+	display: inline-block;
+	margin: 0 8px;
+	line-height: 80px;
+}
+nav a{
+	text-decoration: none;
+	color:rgb(227, 243, 240);
+	font-size: 15px;
+	border: 1px solid transparent;
+	padding: 7px 10px;
+	border-radius: 3px;
+
+}
+a.active, a:hover{
+	border: 1px solid white;
+	transition: .5s;
+}
+nav #icon{
+	color:rgb(227, 243, 240);\
+	font-size: 40px;
+	line-height: 80px;
+	float: right;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+
+}
+
+@media (max-width:1048px ){
+	label.logo{
+			font-size: 32px;
+			padding-left: 60px;
+	}
+	nav ul{
+		margin-right:20px; 
+	}
+	nav a{
+		font-size: 17px;
+	}
+}
+
+@media (max-width:909px ){
+
+	nav #icon{
+		display: block;
+	}
+
+	nav ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background-color: #2f3640;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+
+	}
+	nav li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav a{
+		font-size: 20px;
+	}
+
+	a.active, a:hover{
+		border: none;
+		color: #3498db
+	}
+	nav ul.show{
+		left: 0;
+	}
+}
+
+/*Navbar end of style*/
+section{
+	min-height: 100%;
+	
+}
+.container{
+	margin: auto;
+	max-width: 1170px ;
+	overflow: auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.section-title{
+	 flex: 0 0 100%;
+	 max-width: 100;
+	 margin-bottom: 30px;
+}
+.section-title h2 {
+	text-align: center;
+	font-size: 30px;
+}
+.Products .phone-items{
+	flex: 0 0 100%;
+	max-width:100%;
+}.Products .phone-items .item{
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+	padding: 10px
+}
+.Products .phone-items .item-inner{
+	padding: 30px;
+	border:1px solid #dddddd;
+}
+.Products .phone-items .read-more-content{
+	display: none;
+}
+.Products .phone-items .item-inner h3{
+	font-size: 20px;
+	color: #000000;
+	margin-bottom: 20px;
+	position: relative;
+}
+.Products .phone-items .item-inner h5{
+	font-size: 15px;
+	color: #000000;
+	margin-bottom: 20px;
+	position: relative;
+}
+.Products .phone-items .item-inner h3::before{
+	content: '';
+	height: 1px;
+	width: 80px;
+	background-color: #000000;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+}
+.Products .phone-items .item-inner p{
+	font-size: 16px
+	color :#555555;
+	margin: 0 0 30px;
+}
+.Products .phone-items .item-inner .btn{
+	font-size: 16px;
+	background-color: transparent;
+	border:1px solid #555555;
+	color: #555555;
+	padding: 6px 15px;
+	cursor: pointer;
+
+}
+
+	
+.Products{
+	min-height: 100vh;
+	padding: 80px 0;
+	
+}
+/*Pop up styling*/
+.popup-box{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 500;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+.popup-box.open{
+	visibility: visible;
+	opacity: 1;
+}
+.popup-box .popup-content{
+	background-color: #ffffff;
+	width: 600px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 5px;
+
+}
+.popup-box .popup-header{
+	padding: 15px 40px 15px 15px;
+	border-bottom: 1px solid #dddddd;
+}
+.popup-box .popup-header h3{
+	margin: 0;
+	color: #E91E63;
+	font-size: 20px;
+}
+.popup-box .popup-header .popup-close-icon{
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	color: #555555;
+	font-size: 28px;
+	line-height: 30px;
+	right: 5px;
+	top: 5px;
+	cursor: pointer; 
+}
+.popup-box .popup-body{
+	padding: 15px;
+	max-height: 300px;
+	overflow-y: auto;
+}
+.popup-box .popup-body img{
+
+ 	 width: 100%;
+ 	 display: block;
+ 	 margin-top: 15px;
+}
+.popup-box .popup-body p{
+	font-size: 16px;
+	color: #555555;
+	margin: 0 0 15px;
+}
+.popup-box .popup-footer{
+	padding: 15px;
+	border-top: 1px solid #dddddd;
+	text-align: right;
+}
+.popup-box .popup-footer .btn{
+	padding: 8px 15px;
+	border: 1px solid #555555;
+	color: #555555;
+	font-size: 16px;
+	background-color: transparent;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.popup-box .popup-footer .btn:focus{
+	outline: none;
+}
+/*Resposnive popup */
+@media (max-width: 767px){
+	.Products .phone-items .item{
+	flex: 0 0 100%;
+	max-width: 100%;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+	}
+	.popup-box .popup-content{
+		width: calc(100% - 30px);
+	}
+}
+
+
+/*FOOTER STYLING*/
+
+footer{
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+	color: #d9d9d9;
+	background-color: #111;
+}
+.main-content{
+	display: flex; 
+}
+.main-content .box{
+	flex-basis: 50%;
+	padding: 10px 20px;
+}
+.box h2{
+	font-size: 1.125rem;
+	font-weight: 600;
+	text-transform: uppercase;
+
+}
+ .box .content{
+	margin:20px 0 0 0  ;
+	position: relative;
+}
+/*add lines after each box title*/
+.box .content:before{
+	position: absolute;
+	content: '';
+	top: -10px;
+	height: 1px;
+	width: 100%;
+	background:  #151515;
+}
+.box .content:after{
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 15%;
+	background:#0AF4C8;
+	top: -10px;
+}
+
+.left .content  p{
+	text-align: justify;
+}
+.left .content .social{
+	margin:20px 0 0 0;
+
+}
+.left .content .social a{
+	color: #d9d9d9;
+	padding: 2px;
+
+}
+.left .content .social a span{
+	height: 40px;
+	width: 40px;
+	background:#1a1a1a;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 5px;
+	transition: 0.3s
+}
+.left .content .social a span:hover{
+	background:#0AF4C8;
+}
+
+.center .content .fas{
+	font-size: 1.4315rem;
+	background:#1a1a1a;
+	height: 45px;
+	width: 45px;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 50%;
+}
+.center .content .fas:hover{
+	background:#0AF4C8;
+}
+.center .content .text{
+	font-size: 1.0625rem;
+	font-weight: 500;
+	padding-left: 10px;
+}
+.center .content .phone{
+	margin: 10px 0;
+}
+.right form .text{
+	font-size: 1.0625rem;
+	margin-bottom: 2px;
+	color: #656565;
+
+}
+
+.right form .msg{
+	margin-top: 10px 0;
+}
+.right form input, .right form textarea{
+	width: 100%;
+	font-size: 1.0625rem;
+	background:#151515;
+	padding-left: 10px;
+	border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+	outline-color: #3498db;
+}
+.right form input{
+	height: 35px;
+}
+.right form .btn{
+	 margin-top: 35px;
+}
+.right form .btn button{
+	height: 40px;
+	width: 100%;
+	border:none;
+	outline: none;
+	background:#f12020;
+	font-size: 1.0625rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: .3s;
+
+}
+.right form .btn button:hover{
+	background:#0AF4C8;
+}
+.bottom .center{
+	padding: 5px;
+	font-size: 0.9375;
+	background:#151515;
+}
+.bottom .center span{
+
+	color:#656565;
+}
+.bottom .center span a{
+	color:#0AF4C8;
+	text-decoration: none;
+} 
+.bottom .center span a:hover{
+	text-decoration: underline;
+}
+
+/*Responsive Attribute*/
+@media screen and (max-width: 900px){
+	footer{
+		position: relative;
+		bottom: 0px;
+	}
+
+	.main-content{
+		flex-wrap: wrap;
+		flex-direction: column;
+
+	}
+
+	.main-content .box{
+		margin: 5px 0;
+	}
+
+}

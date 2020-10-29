@@ -1,0 +1,419 @@
+<!-- TO FIX MORE STYLING BUGS!! KUDOSSS -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta  http-equiv="X-UA-Compatible" content="ie-edge">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<!-- toggle the nav bar from side javascript here -->
+	<script>
+		$(document).ready(function(){
+			$("#icon").click(function(){
+				$("ul").toggleClass("show");
+			});
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="phones.css">
+	<title>Phone Store</title>
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav>
+	<label class="logo">Phone Mania</label>
+	<ul class="menutabs">
+		<li><a href="#" class="active">Home</a></li>
+		<li><a href="#">Accessories</a></li>
+		<li><a href="#">services</a></li>
+		<li><a href="#">About Us</a></li>
+
+	</ul>
+	<label id="icon">
+		<i class="fas fa-bars"></i>
+	</label>
+</nav>
+<!-- Navigation Bar end -->
+<!-- Product Display Section  -->
+	<section class="Products">
+		<div class="container">
+			<div class="row">
+				<div class="section-title">
+					<h2>Phone Products</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="phone-items">
+					<div class="row">
+						<!-- Items starts here -->
+							<div class="item">
+								<div class="item-inner">
+									<h3>Huawei Y6</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation.</p>
+								<center>
+						 			<img src="resources/iphone7.png" alt="img" style="width: 50%; height: 50%;">
+						 		</center>
+								<h5>
+						 			<small><s>Kshs.40,000</s></small>
+						 			<span class="price">Kshs 35,000</span>
+						 		</h5>
+						 		
+								<!-- Div class that contains more details that shows when expanded -->
+								<div class="read-more-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+								</div>
+								<!-- end on more details -->
+									<button class="btn" type="button">Details/Order</button>
+								</div>
+							</div>
+						<!-- Items end here -->
+						<!-- Items starts here -->
+							<div class="item">
+								<div class="item-inner">
+									<h3>iPhone 7 Plus</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+								<center>
+						 			<img src="resources/iphone7.png" alt="img" style="width: 50%; height: 50%;">
+						 		</center>
+								<h5>
+						 			<small><s>Kshs.40,000</s></small>
+						 			<span class="price">Kshs 35,000</span>
+						 		</h5>
+								<!-- More details -->
+								<div class="read-more-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+									<img src="resources/iphone7.png" alt="img" style="width: 50%; height: 50%;">
+									<img src="resources/image.jpg" alt="img">
+
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+								</div>
+								<!-- End more details -->
+								<button class="btn" type="button">Details/Order</button>
+								</div>
+							</div>
+						<!-- Items end here -->
+						<!-- Items starts here -->
+							<div class="item">
+								<div class="item-inner">
+									<h3>Samsung Galaxy A8</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+								<center>
+						 			<img src="resources/iphone7.png" alt="img" style="width: 50%; height: 50%;">
+						 		</center>
+						 		<h5>
+						 			<small><s>Kshs.40,000</s></small>
+						 			<span class="price">Kshs 35,000</span>
+						 		</h5>
+								<!-- More Contents  -->
+								<div class="read-more-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+								</div>
+								<!-- end of more details -->
+								<button class="btn" type="button">Order Now</button>
+								</div>
+							</div>
+						<!-- Items end here -->
+						<!-- Items starts here -->
+							<div class="item">
+								<div class="item-inner">
+									<h3>Samsung Galaxy A8</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+								<!-- More Contents  -->
+								<div class="read-more-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+								</div>
+								<!-- end of more details -->
+								<button class="btn" type="button">Order Now</button>
+								</div>
+							</div>
+						<!-- Items end here -->
+						<!-- Items starts here -->
+							<div class="item">
+								<div class="item-inner">
+									<h3>iPhone 7 Plus</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+
+								<!-- More details -->
+								<div class="read-more-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+									<img src="resources/image.jpg" alt="img">
+									<img src="resources/image.jpg" alt="img">
+
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+								</div>
+								<!-- End more details -->
+								<button class="btn" type="button">Order Now</button>
+								</div>
+							</div>
+						<!-- Items end here -->
+							<!-- Items starts here -->
+							<div class="item">
+								<div class="item-inner">
+									<h3>iPhone 7 Plus</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+								<!-- More details -->
+								<div class="read-more-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+									<img src="resources/image.jpg" alt="img">
+									<img src="resources/image.jpg" alt="img">
+
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+								</div>
+								<!-- End more details -->
+								<button class="btn" type="button">Order Now</button>
+								</div>
+							</div>
+						<!-- Items end here -->
+
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="section-title">
+					<h2>Other Accessories</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="phone-items">
+					<div class="row">
+						<!-- Items starts here -->
+							<div class="item">
+								<div class="item-inner">
+									<h3>Huawei Y6</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+								<!-- Div class that contains more details that shows when expanded -->
+								<div class="read-more-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+								</div>
+								<!-- end on more details -->
+									<button class="btn" type="button">Order Now</button>
+								</div>
+							</div>
+						<!-- Items end here -->
+						<!-- Items starts here -->
+							<div class="item">
+								<div class="item-inner">
+									<h3>iPhone 7 Plus</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+								
+
+								<!-- More details -->
+								<div class="read-more-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+									<img src="resources/image.jpg" alt="img">
+									<img src="resources/image.jpg" alt="img">
+
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+								</div>
+								<!-- End more details -->
+								<button class="btn" type="button">Order Now</button>
+								</div>
+							</div>
+						<!-- Items end here -->
+						<!-- Items starts here -->
+							<div class="item">
+								<div class="item-inner">
+									<h3>Samsung Galaxy A8</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+								<!-- More Contents  -->
+								<div class="read-more-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation.</p>
+								</div>
+								<!-- end of more details -->
+								<button class="btn" type="button">Order Now</button>
+								</div>
+							</div>
+						<!-- Items end here -->
+					
+				
+						
+
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<!-- Read more details Popup starts here -->
+	<div class="popup-box">
+		<div class="popup-content">
+			<div class="popup-header">
+				<h3>Huawei Y6</h3>
+				<span class="popup-close-icon">&times;</span>
+			</div>
+			<div class="popup-body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation.</p> 
+			</div>
+			<div class="popup-footer">
+				<button class="call btn">
+					<span class="fas fa-phone-alt "></span>
+	 				<a href="tel: +254769956617" style="text-decoration: none; color: #555555;">Call Now</a>
+	 			</button>
+				<button class="btn popup-close-btn">Close</button>
+			</div>
+		</div>
+	</div>
+	<!-- Read more details Popup ends here -->
+
+	<br>
+
+	<!-- Footer Starts here -->
+	 <footer>
+	 	<div class="main-content">
+	 		<!-- Left section -->
+	 		<div class="left box">
+	 			<h2>About US</h2>
+	 			<!-- content of the left section lies from here -->
+	 			<div class="content">
+	 				<p>
+	 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	 					quis nostrud exercitatioluptate velit esse
+	 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	 				</p>
+	 				<div class="social">
+	 					<a href="#"><span class="fab fa-facebook-f"></span></a>
+	 					<a href="#"><span class="fab fa-twitter"></span></a>
+	 					<a href="#"><span class="fab fa-instagram"></span></a>
+	 					<a href="#"><span class="fab fa-youtube "></span></a>
+
+
+	 				</div>
+	 			</div>
+	 		</div>
+	 		<!-- Middle section -->
+			<div class="center box">
+				<h2>Address</h2>
+				<!-- content of the middle section -->
+				<div class="content">
+					<div class="place">
+						
+						<span class="fas fa-map-marker-alt "></span>
+						<span class="text">Nairobi, Kenya</span>
+					</div>
+
+					<div class="phone">
+						
+						<span class="fas fa-phone-alt "></span>
+						<span class="text">+254-769956617</span>
+					</div>
+
+					<div class="email">
+						
+						<span class="fas fa-envelope "></span>
+						<span class="text">victorotieno069@gmail.com</span>
+					</div>
+					
+				</div>
+				
+			</div>
+
+	 		<!-- Right section -->
+	 		<div class="right box">
+	 			<h2>Contact Us</h2>
+	 			<!-- Content of the Right section -->
+	 			<div class="content">
+	 				<!-- client support form -->
+	 				<form action="#">
+	 					<div class="email">
+	 						<div class="text">Enter Email *</div>
+	 						<input type="email" required>
+	 					</div>
+	 					<div class="msg">
+	 						<div class="text">Message *</div>
+	 						<textarea rows="2" cols="25" required></textarea>
+	 					</div>
+	 					<div class="btn">
+	 						<button type="submit">Send</button>
+	 					</div>
+	 				</form>
+	 			 
+	 			</div>
+	 			
+	 		</div>
+	 	</div>
+	 	<div class="bottom">
+	 		<center class ="center">
+	 			<span class="credits">Designed and Developed by <a href="#">Victor Otieno Omondi</a> |</span>
+	 			<span class="far fa-copyright"></span><span>2020. All Rights Reserved</span>
+	 		</center>
+	 	</div>
+	 </footer>
+<script src="script.js"></script>
+</body>
+</html>
